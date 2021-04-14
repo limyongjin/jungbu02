@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <form action='/action_page.php'> <!--php라는 실행 언어로 서버에 전송-->
+  <fieldset> <!-- 입력 양식별 그룹화 -->
+	<legend>구분짓기</legend>
+	이름:<br>
+	<input type='text' name='name' autofocus required placeholder='이름을 입력해 주세요.'> <!--text:텍스트필드(20자)설정/radio:단일버튼 생성/check:다중선택 버튼생성/password:패스워드 설정영역-->
+	<br>
+	닉네임:<br>
+	<input type='text' name='name' placeholder='닉네임을 입력해 주세요.'> <!--autofocus:화면을 열 때 폼의 원하는 요소에 커서 위치/required:항목을 채워야 제출가능/placeholder:힌트 기능-->
+	<br><br>
+
+	<input type='radio' name='gender' value='man' checked>남자<br>
+	<input type='radio' name='gender' value='woman'>여자<br><br>
+
+	<input type='checkbox' name='vehicle1' value='Bike'>차량을 보유<br>
+	<input type='checkbox' name='vehicle2' value='Car'>자전거 보유<br><br>
+
+	<select name='color' size='3' multiple>
+		<option value='red'>빨강</option>
+		<option value='blue'>파랑</option>
+		<option value='green'>초록</option>
+		<option value='yellow'>노랑</option>
+	</select><br><br>
+
+	<textarea name='message' cols='30' rows='10' align='left'>저희 집 앞마당은 넓습니다.</textarea>
+	<br>
+	<input type='submit' value='메일보내기'> <!--name:서버에 전송되는 필수 값/value:폼 필드에 기본적으로 입력해 주는 값(필수 또는 선택)-->
+  </fieldset>
+  </form>
+ </body>
+</html>
